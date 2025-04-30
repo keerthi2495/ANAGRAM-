@@ -1,0 +1,20 @@
+str4 = input("Enter second string: ").strip()
+str1 = str4.lower()  
+str2 = str4.lower()
+
+d1 = {}
+d2 = {}
+for i in str1:
+    if i in d1:
+        d1[i] += 1
+    else:
+        d1[i] = 1
+for j in str2:
+    if j in d2:
+        d2[j] += 1
+    else:
+        d2[j] = 1
+if d1 == d2:
+    print("Correct")
+else:
+    print("Wrong")
